@@ -25,13 +25,13 @@ body {
 
  .header-logo {
     font-family: 'PT Serif';
-    font-size: 57.26306px;
+     font-size: 4vw;    /* 57.26306px; */
     color: white;
     position: absolute;
     top: calc(20% - 20px);
     left: 15%;
     z-index: 999;
-    max-width: 480px;
+    max-width: 35vw;
     height: auto;
 }
 
@@ -55,8 +55,8 @@ main {
 }
 
 .responsive {
-    max-width: 191px;
-    max-height: 195px;
+    max-width: 300x;
+    max-height: auto;
 }
 
 
@@ -65,26 +65,50 @@ main {
     justify-self: center;
     grid-template-columns: repeat(3, 1fr);
     margin: 75px 240px 100px 240px;
+    z-index: 0;
+    width: 300px;
+}
+
+@media screen and (max-width: 1145px) {
+.header-logo {
+    font-size: 4vw;
+}
 }
 
 @media screen and (max-width: 1045px) {
     .main-img-container {
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px;
-    }
+        margin: 15vw;
+} .header-logo {
+    top: calc(10% - 20px);
+}
 }
 
 @media screen and (max-width: 700px) {
     .main-img-container {
         grid-template-columns: repeat(1, 1fr);
-        margin: 15px;
+        justify-content: center;
+        margin: 15vw;
+    } .responsive {
+        max-width: 230px;
+    } .main-logo {
+        font-size: 23px;
     }
+}
+
+@media screen and (max-width: 500px) {
+.header-logo { 
+    top: calc(6% - 20px);
+    left: 10%;
+    max-width: 20vh;
+}
 }
 
 
 a :hover {
-   background-image: url('../img/ring_hover_2.png');
+   background-image: url('../img/ring_hover0.png');
    z-index:999;
+   background-size: cover;
 }
 
 /* /main */
