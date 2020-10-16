@@ -76,7 +76,7 @@ main {
 }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1106px) {
     .main-img-container {
         grid-template-columns: repeat(2, 1fr);
         margin: 15vw;
