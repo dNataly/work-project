@@ -102,11 +102,12 @@ margin: 75px 200px 75px 100px;
         font-size: 4.5vw;
         top: calc(5% - 20px);
 }
+}
 
 @media screen and (max-width: 500px) {
 .header-logo { 
     max-width: 20vh;
-    top: calc(5% - 20px);
+    top: calc(4% - 20px);
 }
 }
 
