@@ -64,7 +64,7 @@ main {
     display: grid;
     justify-self: center;
     grid-template-columns: repeat(3, 1fr);
-    margin: 75px 240px 100px 240px;
+    margin: 75px 280px 75px 300px;
     z-index: 0;
     width: 300px;
 }
