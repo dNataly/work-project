@@ -25,7 +25,7 @@ body {
 
  .header-logo {
     font-family: 'PT Serif';
-     font-size: 4vw;    /* 57.26306px; */
+    font-size: 4vw;    /* 57.26306px; */
     color: white;
     position: absolute;
     top: calc(20% - 20px);
@@ -71,7 +71,8 @@ main {
 
 @media screen and (max-width: 1145px) {
 .header-logo {
-    font-size: 4vw;
+    font-size: 4.5vw;
+    top: calc(4% - 20px);
 }
 }
 
@@ -79,9 +80,7 @@ main {
     .main-img-container {
         grid-template-columns: repeat(2, 1fr);
         margin: 15vw;
-} .header-logo {
-    top: calc(10% - 20px);
-}
+} 
 }
 
 @media screen and (max-width: 700px) {
@@ -93,12 +92,16 @@ main {
         max-width: 230px;
     } .main-logo {
         font-size: 23px;
+    } .header-logo {
+        font-size: 5vw;
+    } .main-text {
+        margin: 0px 10px;
     }
 }
 
 @media screen and (max-width: 500px) {
 .header-logo { 
-    top: calc(6% - 20px);
+    top: calc(5% - 20px);
     left: 10%;
     max-width: 20vh;
 }
