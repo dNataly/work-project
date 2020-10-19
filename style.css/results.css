@@ -16,8 +16,7 @@ html {
 
 .main-header {
     text-align: center;
-    margin-top: 215px;
-    margin-bottom: 80px;
+    margin: 30px 0px;
     font-size: 50px;
     font-family: 'AvertaCY, Regular', sans-serif;
     color: rgba(8,8,8,255);
