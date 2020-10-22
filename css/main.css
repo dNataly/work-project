@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.text_right, .text_left, .bottom_text {
+    font-size: 18px;
+    font-family: "SFUIText", sans-serif;
+    color: rgb(33, 33, 32);
+    line-height: 1.667;
+}
+
+.text_left, .bottom_text {
+    margin-top: 40px;
+}
+
+
+.text_right, .bottom_text {
+    width: 350px;
+    margin-left: 75px;
+}
+
+.text_left {
+    width: 380px;
+    margin-left: 40px;
+}
+
+.block_0  .text_right{
+    margin-top: 25px;
+}
+
+.block_3, .bl .text_rightock_4  .text_right{
+    margin-top: 30px;
+}
+
+.block_2 .text_right, .block_5  .text_right{
+    margin-top: 15px;
+}
+
+.logo {
+    flex-direction: column;
+    text-align: center;
+}
+
+#logo {
+    margin: 25px 100px 25px 100px;
+}
+
+.shape {
+    margin: 35px 0px;
+    text-align: center;
+}
+
+.block_0,
+.block_1, 
+.block_2,
+.block_3,
+.block_4,
+.block_5 
+{   display: grid;
+    grid-template-columns: repeat(2fr, );
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 240px 0px 240px;
+}
+
+.block_img {
+    margin-top: -60px; 
+}
+
+.block_head_text {
+    font-size: 29px;
+    font-family: "SFUIText Bold", sans-serif;
+    margin-left: -27px;
+    margin-bottom: 40px;
+}
+
+span {
+    background-color: #ebf0f5;
+    height: 60px;
+    
+}
+
+
+.button-center {
+    text-align: center;
+    margin: 60px 0px 230px 0px;
+}
+
+button {
+    width: 560px;
+    height: 85px;
+    background-color: #00497b;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.sticky_button {
+
+    width: 560px;
+    height: 85px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:88%;
+    z-index: 1000;
+    background-color: #00497b;
+    font-size: 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "SFUIText Regular", sans-serif;
+    color: rgba(88,89,91,255);
+}
+
+
