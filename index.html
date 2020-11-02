@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Krok Business School</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -15,11 +14,11 @@
         <img src="img/shape.png" class="shape" />
       </div>
     </div>
-    <main>
+    <main data-sticky-container class='main'>
       <section>
         <div class="block_0">
           <div class="text_img" data-aos="fade-right">
-            <img src="img/text_img0.png" />
+            <img src="img/text_img0.png" id='text_img'/>
           </div>
           <div class="text_right" data-aos="zoom-in">
             Без суперечок - ніяк. Однак, якщо любовні або дружні конфлікти можна
@@ -37,19 +36,17 @@
             медіації.
           </div>
           <div class="block_img" data-aos="fade-left">
-            <img src="img/block0.png" />
+            <img src="img/block0.png" id='block_img'/>
           </div>
         </div>
-        <div class="shape"><img src="img/shape.png" /></div>
+        <div><img src="img/shape.png" class="shape"/></div>
       </section>
-      <div class="sticky_button">
-          <button type="button">ЗАПОВНИТИ АНКЕТУ</button>
-        </div>
       <section>
         <div class="block_1">
           <div class="text_img">
             <img
               src="img/text_img1.png"
+              id='text_img'
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -73,7 +70,7 @@
             наглядачі незалежну людину із компанії.
           </div>
           <div class="block_img" data-aos="fade-left" data-aos-duration="2000">
-            <img src="img/block1.png" />
+            <img src="img/block1.png" id='block_img'/>
           </div>
           <img
             src="img/triangles_group.png"
@@ -88,7 +85,7 @@
             поліпшите відносини із командою.
           </div>
         </div>
-        <div class="shape"><img src="img/shape.png" /></div>
+        <div><img src="img/shape.png" class="shape"/></div>
       </section>
 
       <section>
@@ -96,6 +93,7 @@
           <div class="text_img">
             <img
               src="img/text_img2.png"
+              id='text_img'
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -118,7 +116,7 @@
             спілкується на підвищених тонах.
           </div>
           <div class="block_img" data-aos="fade-left">
-            <img src="img/block2.png" />
+            <img src="img/block2.png" id='block_img' />
           </div>
           <img
             src="img/triangles_group.png"
@@ -135,7 +133,7 @@
             спілкування із другою стороною, ні про врахування її інтересів.
           </div>
         </div>
-        <div class="shape"><img src="img/shape.png" /></div>
+        <div><img src="img/shape.png" class="shape"/></div>
       </section>
 
       <section>
@@ -143,6 +141,7 @@
           <div class="text_img">
             <img
               src="img/text_img3.png"
+              id='text_img'
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -164,7 +163,7 @@
             фінансистамі та гальмують роботу компанії.
           </div>
           <div class="block_img" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/block3.png" />
+            <img src="img/block3.png" id='block_img' />
           </div>
           <img
             src="img/triangles_group.png"
@@ -180,7 +179,7 @@
             працівників відділу і влаштує усі сторони суперечки.
           </div>
         </div>
-        <div class="shape"><img src="img/shape.png" /></div>
+        <div><img src="img/shape.png" class="shape" /></div>
       </section>
 
       <section>
@@ -188,6 +187,7 @@
           <div class="text_img">
             <img
               src="img/text_img4.png"
+              id='text_img'
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -210,7 +210,7 @@
             спеціалістів.
           </div>
           <div class="block_img" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/block4.png" />
+            <img src="img/block4.png" id='block_img'/>
           </div>
           <img
             src="img/triangles_group.png"
@@ -226,7 +226,7 @@
             час, і кошти, и лояльність співробітників.
           </div>
         </div>
-        <div class="shape"><img src="img/shape.png" /></div>
+        <div><img src="img/shape.png" class="shape"/></div>
       </section>
 
       <section>
@@ -234,6 +234,7 @@
           <div class="text_img">
             <img
               src="img/text_img5.png"
+              id='text_img'
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -261,23 +262,28 @@
             />
           </div>
           <div class="block_img" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/block5.png" />
+            <img src="img/block5.png" id='block_img' />
           </div>
         </div>
       </section>
-      <div class="button-center" id="footer-button">
-        <button type="button">ОПАНУВАТИ МИСТЕЦТВО МЕДІАЦІЇ</button>
+      <div class="button_center" >
+        <button type="button" id="footer_button">ОПАНУВАТИ МИСТЕЦТВО МЕДІАЦІЇ</button>
+      </div>
+
+      <div class="fixed_button selector">
+        <button type="button" id='fixed_button'>ЗАПОВНИТИ АНКЕТУ</button>
       </div>
     </main>
 
     <footer>
-      <div class="shape"><img src="img/shape.png" /></div>
+      <div><img src="img/shape.png" class="shape"/></div>
       <div class="footer-text">Copyright @2020 - All Right Reserved</div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="js/animation.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
